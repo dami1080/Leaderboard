@@ -5,11 +5,11 @@
 }
 
 .header {
-  padding: 20px;  
+  padding: 20px;
 }
 
 .header h1 {
-  font-size: 70px;    
+  font-size: 70px;
 }
 
 .scores-header {
@@ -20,11 +20,11 @@
 
 .scores-header button {
   margin: 10px;
-  padding: 12px;    
+  padding: 12px;
 }
 
 .scores-header h2 {
-  font-size: 25px;    
+  font-size: 25px;
 }
 
 .score-container {
@@ -36,26 +36,26 @@
 
 li {
   list-style: none;
-  padding: 10px;    
+  padding: 10px;
 }
 
 li:nth-child(even) {
-    background-color: rgb(184, 180, 180);
+  background-color: rgb(184, 180, 180);
 }
 
 ul {
- border: 1px solid black;  
+  border: 1px solid black;  
 }
 
 input {
   padding: 10px;
   width: 75%;
   margin-top: 4px;
-  margin-top: 2px;    
+  margin-top: 2px;
 }
 
 form {
-  margin-top: 20px;    
+  margin-top: 20px;
 }
 
 #submit {
