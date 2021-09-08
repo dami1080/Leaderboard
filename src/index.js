@@ -1,6 +1,6 @@
 import { layout } from './layout';
 import './style.css';
 
-const container = document.querySelector('.score-container');
+const root = document.getElementById('root');
 
-container.innerHTML = layout();
+root.innerHTML = layout();

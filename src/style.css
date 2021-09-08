@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-.header {
+#root {
   padding: 20px;
 }
 
-.header h1 {
+h1 {
   font-size: 70px;
 }
 

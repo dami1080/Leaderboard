@@ -1,5 +1,7 @@
 export const layout = () => `
- <div class="main">
+<h1>Leaderboard</h1>
+<div class="score-container">
+<div class="scores">
   <div class="scores-header">
    <h2>Recent scores</h2>
    <button>Refresh</button>
@@ -12,8 +14,8 @@ export const layout = () => `
    <li>Name:77</li>
    <li>Name:70</li>
   </ul>
- </div>
- <div class="add-scores">
+</div>
+<div class="add-scores">
   <div class="scores-header">
     <h2>Add your score</h2>
   </div> 
@@ -22,6 +24,8 @@ export const layout = () => `
     <input type="number" id="score" placeholder="Your score"><br><br>
     <button type="submit" id="submit">Submit</button>
    </form>
- </div`;
+</div
+</div>
+`;
 
 export default layout;
