@@ -10,15 +10,18 @@ export const layout = () => `
    <li>Name:78</li>
    <li>Name:125</li>
    <li>Name:77</li>
+   <li>Name:70</li>
   </ul>
  </div>
  <div class="add-scores">
- <h2>Add your score</h2>
- </div> 
-  <form>
-   <input type="text" id="name" placeholder="Your name">
-   <input type="number" id="score" placeholder="Your score">
-   <button type="submit" id="submit">Submit</button>
-  </form>`
+  <div class="scores-header">
+    <h2>Add your score</h2>
+  </div> 
+   <form action="">
+    <input type="text" id="name" placeholder="Your name"><br><br>
+    <input type="number" id="score" placeholder="Your score"><br><br>
+    <button type="submit" id="submit">Submit</button>
+   </form>
+ </div`;
 
 export default layout;
