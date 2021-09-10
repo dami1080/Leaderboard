@@ -1,28 +1,23 @@
-import { layout, showScores } from './layout';
-import { createGame, addScore, getScores } from './api';
 import './style.css';
+import addScore from './addScore.js';
+import renderList from './renderList.js';
 
-const root = document.getElementById('root');
+const submitBtn = document.getElementById('submit');
+const refreshBtn = document.getElementById('refresh');
+const ul = document.querySelector('ul');
 
-root.innerHTML = layout();
-const form = document.getElementById('form');
-const scoreList = document.getElementById('score-list');
-const refreshButton = document.getElementById('refreshBtn');
-
-window.addEventListener('DOMContentLoaded', async () => {
-  const gameId = (str) => createGame(str);
-
-  form.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const name = document.getElementById('formName');
-    const score = document.getElementById('formScore');
-    await addScore(name, score, gameId);
-    name.value = '';
-    score.value = '';
-  });
-
-  refreshButton.addEventListener('click', async () => {
-    const result = await getScores(gameId);
-    scoreList.innerHTML = showScores(result.result);
-  });
+submitBtn.addEventListener('click', () => {
+  const name = document.getElementById('name').value;
+  const score = document.getElementById('score').value;
+  const data = { user: `${name}`, score: parseInt(`${score}`, 10) };
+  addScore(data);
 });
+
+refreshBtn.addEventListener('click', () => {
+  ul.innerHTML = '';
+  renderList();
+});
+
+window.onload = () => {
+  renderList();
+};
