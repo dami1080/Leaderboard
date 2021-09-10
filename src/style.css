@@ -9,12 +9,12 @@
 body {
   min-height: 100vh;
   font-family: 'Roboto Mono', monospace;
-  color: #14746f;
-  background-color: #222;
+  color: #f5fafa;
+  background-color: rgb(194, 0, 0);
 }
 
 .scores-listing li:nth-child(even) {
-  background-color: #fff;
+  background-color: rgb(141, 128, 128);
 }
 
 .btn {
