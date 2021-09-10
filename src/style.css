@@ -3,63 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-#root {
-  padding: 20px;
+body {
+  min-height: 100vh;
 }
 
-h1 {
-  font-size: 70px;
-}
-
-.scores-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.scores-header button {
-  margin: 10px;
-  padding: 12px;
-}
-
-.scores-header h2 {
-  font-size: 25px;
-}
-
-.score-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 5% 10%;
-  gap: 5rem;
-}
-
-li {
-  list-style: none;
-  padding: 10px;
-}
-
-li:nth-child(even) {
+.scores-listing li:nth-child(even) {
   background-color: rgb(184, 180, 180);
-}
-
-ul {
-  border: 1px solid black;
-}
-
-input {
-  padding: 10px;
-  width: 75%;
-  margin-top: 4px;
-  margin-top: 2px;
-}
-
-form {
-  margin-top: 20px;
-}
-
-#submit {
-  padding: 10px;
-  float: right;
-  margin-right: 125px;
 }
