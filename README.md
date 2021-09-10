@@ -10,6 +10,11 @@
 - Webpack
 - VS Code
 
+## Live Demo
+
+[Live Demo Link](https://flamboyant-goodall-79e35e.netlify.app)
+
+
 ##  Setup    <a name = "setup"></a>
 
   - <code>$ git clone https://github.com/dami1080/Leaderboard.git</code>
