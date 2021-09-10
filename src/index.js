@@ -1,6 +1,6 @@
 import './style.css';
-import addScore from './addScore.js';
-import renderList from './renderList.js';
+import addScore from './addScore';
+import renderList from './renderList';
 
 const submitBtn = document.getElementById('submit');
 const refreshBtn = document.getElementById('refresh');
