@@ -5,11 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboards</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <script defer src="main.js"></script></head>
 <body>
-    <div id="root">
-        
+    <h1 class="p-5">Leaderboard</h1>
+    <div class=" container d-flex w-100 justify-content-center gap-5">
+        <section class="score-section w-100">
+            <div class="d-flex justify-content-between mb-3">
+                <h4>Recent scores</h4>
+                <button type="submit" id="refresh" class="btn btn-secondary btn-lg">Refresh</button>
+            </div>
+            <ul class= 'scores-listing list-unstyled border border-secondary'></ul>
+        </section>
+        <section class="form-section w-100">
+            <div class="mb-4">
+                <h4>Add your score</h4>
+            </div>
+            <form action="#" class="d-flex flex-column">
+                <div class="mb-4 mt-2 w-75">
+                    <input type="text" id="name" class="form-control form-control-lg"  placeholder="Your name">
+                </div>
+                <div class="mb-4 w-75">
+                    <input type="text" id="score" class="form-control form-control-lg"  placeholder="Your score">
+                </div>
+                <div class="d-flex justify-content-end w-75">
+                    <button type="submit" id="submit" class="btn btn-secondary btn-lg">Submit</button>
+                </div>
+            </form>
+        </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        
 </body>
 </html>
